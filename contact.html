@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwifTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">
+            <div class="company">
+                <img src="Images/logo.png" alt="logo" class="logo-img">
+                <div class="compname">SWIFTech</div>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="services.html" >Services</a>
+            <a href="about.html">About</a>
+            <a href="news.html">News</a>
+            <a href="contact.html" class="active-sec">Contact</a>
+        </div>
+    </nav>
+</header>
+
+
+<section class = "contact-section">
+    <div class="contact-bg">
+        <h3>Get in Touch with Us</h3>
+        <h2>Contact Us</h2>
+        <div class="line">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <p class="text">
+            Our diverse offerings, including high-quality traffic cones, advanced emergency trucks, and specialized road safety equipment like road studs,
+            reflect our dedication to quality and safety. We pride ourselves on our adaptability, allowing us to respond to the unique challenges of each
+            project while maintaining the highest standards of service
+        </p>
+
+    </div>
+
+    <div class="contact-body">
+        <div class="contact-info">
+            <div>
+                <span><i class="fas fa-mobile-alt"></i></span>
+                <span>Phone No.</span>
+                <span class ="text">+6328244719</span>
+                <span class="text">+63917 5891174</span>
+            </div>
+
+            <div>
+                <span><i class="fas fa-envelope-open"></i></span>
+                <span>Email</span>
+                <span class="text">info@swiftech.ph</span>
+            </div>
+
+            <div>
+                <span><i class="fas fa-map-marker-alt"></i></span>
+                <span>Address</span>
+                <span class="text">34 Marciano St, Antipolo, 1800 Rizal</span>
+            </div>
+
+            <div>
+                <span><i class="fas fa-clock"></i></span>
+                <span>Opening Hours</span>
+                <span class="text">Weekdays (11:00 AM to 5:00 PM)</span>
+                <span class="text">Weekends (11:00 AM to 8:00 PM)</span>
+            </div>
+        </div>
+
+        <div class="contact-form" >
+            <form method="post" action="mailto:rogjumawid@mymail.mapua.edu.ph" autocomplete="on">
+                <div>
+                    <input type="text" class="form-control" placeholder="First Name" required>
+                    <input type="text" class="form-control" placeholder="Last Name" required>
+                </div>
+
+                <div>
+                    <input type="email" class="form-control" placeholder="E-mail" required>
+                    <input type="text" class="form-control" placeholder="Phone" required>
+                </div>
+
+                <textarea rows="5" placeholder="Message" class="form-control"></textarea>
+
+                <input type="submit" class="send-btn" value="send message">
+            </form>
+
+            <div>
+                <img src="Images/proj.svg" alt=""></img>
+            </div>
+        </div>
+    </div>
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241.28599416138113!2d121.10959722088145!3d14.623218499313989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b9006e03037f%3A0x62c519d676711410!2sSwiftech%20Solutions!5e0!3m2!1sen!2sph!4v1740882079291!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Slideshow Section -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="Images/Proof1.jpg" alt="Certificate of Incorporation">
+            <div class="text">Certificate of Incorporation</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Images/Proof2.jpg" alt="Certificate of Registration">
+            <div class="text">Certificate of Registration</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Images/Proof3.jpg" alt="Certificate of Registration #2">
+            <div class="text">Certificate of Registration #2</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Images/Proof4.jpg" alt="Receipt">
+            <div class="text">Receipt</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- The dots/circles -->
+    <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <div class="contact-footer">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+            <a href="" class="fab fa-facebook-f"></a>
+            <a href="" class="fab fa-twitter"></a>
+            <a href="" class="fab fa-instagram"></a>
+            <a href="" class="fab fa-linkedin"></a>
+            <a href="" class="fab fa-youtube"></a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h4>About SWIFTech</h4>
+            <p>We specialize in innovative solutions that bridge technology and emergency response, focusing on government software, emergency transportation, and traffic management.</p>
+        </div>
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Contact Info</h4>
+            <p><i class="fas fa-map-marker-alt"></i> 34 Marciano St, Antipolo, 1800 Rizal</p>
+            <p><i class="fas fa-phone"></i> +6328244719</p>
+            <p><i class="fas fa-envelope"></i> info@swiftech.ph</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p class="copyright">&copy; 2025 SWIFTech. All rights reserved.</p>
+        <div class="divider"></div>
+        <div class="footer-column">
+            <p>Samuela Adame | Kyle Austria |  Lee Cueva | Rex Jumawid | Heinz Zaulda</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+
+</body>
+</html>

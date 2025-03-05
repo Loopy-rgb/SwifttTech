@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SwifTech - Software Solutions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">
+        <div class="company">
+          <img src="Images/logo.png" alt="logo" class="logo-img">
+          <div class="compname">SWIFTech</div>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="services.html" class="active-sec">Services</a>
+        <a href="about.html">About</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="products">
+        <div class="product-container">
+            <div class="product">
+                <img src="Images/logo.png" class="service-image" alt="Software Solutions">
+            </div>
+            <h2>SWIF<span class="highlight">Tech</span></h2>
+            <div class="glow"></div>
+        </div>
+        <div class="platform-info">
+            <h2>SWIFTech <span class="highlight">Products</span></h2>
+            <div class="rating">★ ★ ★ ★ ★</div>
+            <h3>Comprehensive solutions and tools for enhanced government operations, emergency response, safety, and traffic management.</h3>
+            <p>We offer a range of innovative software solutions, specialized vehicles, high-quality safety equipment, and advanced traffic 
+                management tools. Our offerings are designed to improve government efficiency, support disaster and emergency response, provide 
+                reliable safety gear, and ensure efficient traffic control. By leveraging cutting-edge technology and robust engineering, we aim 
+                to deliver comprehensive and reliable solutions tailored to meet diverse needs and challenges.</p>
+        </div>
+    </section>
+
+    <!-- Categories Navigation Section -->
+    <section class="product-categories">
+        <h2>Explore Our Product Categories</h2>
+            <div class="category-links">
+            <!-- Software Solutions Card -->
+            <a href="Software Solutions.html" class="category-card">
+                <img src="Images/software-solution.jpg" alt="Software Solutions">
+                <h3>Software Solutions</h3>
+            </a>
+        
+            <!-- Specialized Vehicles Card -->
+            <a href="Specialized Vehicles.html" class="category-card">
+                <img src="Images/vehicle-image.jpg" alt="Specialized Vehicles">
+                <h3>Specialized Vehicles</h3>
+            </a>
+        
+            <!-- Safety Equipment Card -->
+            <a href="Safety Equipment.html" class="category-card">
+                <img src="Images/safety-equipment.jpg" alt="Safety Equipment">
+                <h3>Safety Equipment</h3>
+            </a>
+        
+            <!-- Traffic Management Card -->
+            <a href="Traffic Management.html" class="category-card">
+                <img src="Images/traffic-cones.jpg" alt="Traffic Management">
+                <h3>Traffic Management</h3>
+            </a>
+        </div>
+    </section>
+  
+  
+    <!-- Best Sellers / Featured Products Slider -->
+    <section class="best-sellers">
+        <h2>Traffic Solutions</h2>
+        <div class="slider-container">
+            <button class="prev-btn">&#10094;</button>
+            <div class="product-slider">
+                <!-- Product Card 1 -->
+                <div class="product">
+                    <div class="product-image">
+                        <img src="Images/tm1.png" alt="Traffic Cones">
+                    </div>
+                    <h3>Traffic Cones</h3>
+                    <button class="btn" onclick="openModal('cone')">Learn More</button>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="product">
+                    <div class="product-image">
+                        <img src="Images/tm2.png" alt="Solar Cat Eye Studs">
+                    </div>
+                    <h3>Solar Cat Eye Studs</h3>
+                    <button class="btn" onclick="openModal('cateye')">Learn More</button>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="product">
+                    <div class="product-image">
+                        <img src="Images/tm3.png" alt="Solar Embedded Studs">
+                    </div>
+                    <h3>Solar Embedded Studs</h3>
+                    <button class="btn" onclick="openModal('embedded')">Learn More</button>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="product">
+                    <div class="product-image">
+                        <img src="Images/tm4.png" alt="PU Delineator Post">
+                    </div>
+                    <h3>PU Delineator Post</h3>
+                    <button class="btn" onclick="openModal('post')">Learn More</button>
+                </div>
+                <!-- Product Card 5 -->
+                <div class="product">
+                    <div class="product-image">
+                        <img src="Images/epl1.png" alt="LED Billboards">
+                    </div>
+                    <h3>LED Billboards</h3>
+                    <button class="btn" onclick="openModal('billboards')">Learn More</button>
+                </div>
+                <!-- Product Card 6 -->
+                <div class="product">
+                    <div class="product-image">
+                        <img src="Images/epl2.png" alt="Portable Flashing Arrow">
+                    </div>
+                    <h3>Portable Flashing Arrow</h3>
+                    <button class="btn" onclick="openModal('arrow')">Learn More</button>
+                </div>
+                <!-- Product Card 7 -->
+                <div class="product">
+                    <div class="product-image">
+                        <img src="Images/epl3.png" alt="Solar Flashing Arrow Trailer">
+                    </div>
+                    <h3>Solar Flashing Arrow Trailer</h3>
+                    <button class="btn" onclick="openModal('trailer')">Learn More</button>
+                </div>
+            </div>
+            <button class="next-btn">&#10095;</button>
+        </div>
+    </section>
+  </main>
+  
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-header">
+        <h2 id="modal-title"></h2>
+      </div>
+      <div class="modal-body">
+        <img id="modal-image" src="" alt="" class="modal-img">
+        <p id="modal-text"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>About SWIFTech</h4>
+        <p>We specialize in innovative solutions that bridge technology and emergency response, focusing on government software, emergency transportation, and more.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact Info</h4>
+        <p><i class="fas fa-map-marker-alt"></i> 34 Marciano St, Antipolo, 1800 Rizal</p>
+        <p><i class="fas fa-phone"></i> +6328244719</p>
+        <p><i class="fas fa-envelope"></i> info@swiftech.ph</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+        <p class="copyright">&copy; 2025 SWIFTech. All rights reserved.</p>
+        <div class="divider"></div>
+        <div class="footer-column">
+            <p>Samuela Adame | Kyle Austria |  Lee Cueva | Rex Jumawid | Heinz Zaulda</p>
+        </div>
+    </div>
+  </footer>
+  
+
+  <script src="https://kit.fontawesome.com/eca3b34625.js" crossorigin="anonymous"></script>
+  
+  <script>
+    window.onload = () => {
+        const slider = document.querySelector(".product-slider");
+        const prevBtn = document.querySelector(".prev-btn");
+        const nextBtn = document.querySelector(".next-btn");
+
+        if (slider.scrollWidth <= slider.clientWidth) {
+            slider.style.justifyContent = "center";
+        } else {
+            slider.style.justifyContent = "flex-start";
+        }
+
+        let scrollAmount = 0;
+        const scrollStep = 270;
+
+        nextBtn.addEventListener("click", () => {
+            const maxScroll = slider.scrollWidth - slider.clientWidth;
+            if (scrollAmount < maxScroll) {
+            scrollAmount = Math.min(scrollAmount + scrollStep, maxScroll);
+            slider.style.transform = `translateX(-${scrollAmount}px)`;
+            }
+        });
+
+        prevBtn.addEventListener("click", () => {
+            if (scrollAmount > 0) {
+            scrollAmount = Math.max(scrollAmount - scrollStep, 0);
+            slider.style.transform = `translateX(-${scrollAmount}px)`;
+            }
+        });
+
+    document.getElementById("modal").style.display = "none";
+    };
+
+
+    function openModal(key) {
+    let details = {
+        'cone': {
+            title: "Traffic Cones",
+            text: "- Ideal for road construction, traffic management, crowd control, and emergency response \n- Eco-friendly Traffic Cones Solar Blinker Lights powered by solar energy \n- Solar panels charge built-in batteries during the day, ensuring nighttime operation",
+            image: "Images/tm1.png"
+        },
+        'cateye': {
+            title: "Solar Cat Eye Studs",
+            text: "Durable, solar-powered road markers that enhance nighttime visibility with bright LED illumination. Ideal for highways and pedestrian crossings.",
+            image: "Images/tm2.png"
+        },
+        'embedded': {
+            title: "Solar Embedded Studs",
+            text: "Flush-mounted solar road studs that provide continuous guidance with energy-efficient lighting, ensuring safety in low-visibility conditions.",
+            image: "Images/tm3.png"
+        },
+        'post': {
+            title: "PU Delineator Post",
+            text: "Flexible and impact-resistant polyurethane post used for lane separation and traffic management, designed to withstand repeated vehicle contact.",
+            image: "Images/tm4.png"
+        },
+        'billboards': {
+            title: "LED Billboards",
+            text: "High-visibility digital displays designed for effective communication, advertising, and public information with vibrant LED technology.",
+            image: "Images/epl1.png"
+        },
+        'arrow': {
+            title: "Portable Flashing Arrow",
+            text: "Mobile traffic control devices that provide clear directional guidance in construction zones or during emergencies.",
+            image: "Images/epl2.png"
+        },
+        'trailer': {
+            title: "Solar Flashing Arrow Trailer",
+            text: "Solar-powered trailers equipped with flashing arrows to enhance traffic management and safety, especially in temporary or remote work areas.",
+            image: "Images/epl3.png"
+        }
+    };
+    document.getElementById("modal-title").innerText = details[key].title;
+    document.getElementById("modal-text").innerText = details[key].text;
+    document.getElementById("modal-image").src = details[key].image;
+    document.getElementById("modal").style.display = "flex";
+}
+
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
+  </script>
+</body>
+</html>
